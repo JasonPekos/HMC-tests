@@ -1,4 +1,4 @@
-# https://gregorygundersen.com/blog/2020/07/05/hmc/#neal2011mcmc
+# See e.g. https://gregorygundersen.com/blog/2020/07/05/hmc/#neal2011mcmc
 function hmc_step(log_prob, q_i, leapfrog_steps, ϵ, mass_matrix)
 
     energy_dist = MvNormal(mass_matrix)
